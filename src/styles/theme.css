@@ -1,0 +1,125 @@
+
+
+/* ==============================
+   1. Light Theme - Default
+================================= */
+
+:root {
+  color-scheme: light;
+
+  /* Colors */
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+  --color-sidebar: #f8fafc;
+
+  --color-foreground: #0f172a;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+
+  --color-input: #f1f5f9;
+
+  --color-accent: #ffd21e;
+  --color-accent-hover: #ff9d0b;
+
+  /* Typography */
+  --font-primary: "Inter", sans-serif;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+
+  /* Border Radius */
+  --app-radius-sm: 0.25rem;
+  --app-radius-md: 0.5rem;
+  --app-radius-lg: 0.75rem;
+  --app-radius-xl: 1rem;
+  --app-radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-card: 0 1px 3px rgb(15 23 42 / 5%);
+  --shadow-dropdown: 0 4px 12px rgb(15 23 42 / 10%);
+}
+
+
+/* ==============================
+   2. Dark Theme
+================================= */
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-background: #020618;
+  --color-surface: #0f172b;
+  --color-sidebar: #0f172b;
+
+  --color-foreground: #f8fafc;
+  --color-muted: #94a3b8;
+  --color-border: #1d293d;
+
+  --color-input: #1d293d;
+}
+
+
+/* ==============================
+   3. Tailwind Design Tokens
+================================= */
+
+@theme inline {
+
+  /* Colors */
+  --color-background: var(--color-background);
+  --color-surface: var(--color-surface);
+  --color-sidebar: var(--color-sidebar);
+
+  --color-foreground: var(--color-foreground);
+  --color-muted: var(--color-muted);
+  --color-border: var(--color-border);
+
+  --color-input: var(--color-input);
+
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+
+  /* Spacing */
+  --spacing-xs: var(--space-xs);
+  --spacing-sm: var(--space-sm);
+  --spacing-md: var(--space-md);
+  --spacing-lg: var(--space-lg);
+  --spacing-xl: var(--space-xl);
+  --spacing-2xl: var(--space-2xl);
+
+  /* Typography */
+  --font-sans: var(--font-primary);
+
+  --text-xs: var(--font-size-xs);
+  --text-sm: var(--font-size-sm);
+  --text-base: var(--font-size-base);
+  --text-lg: var(--font-size-lg);
+  --text-xl: var(--font-size-xl);
+  --text-2xl: var(--font-size-2xl);
+  --text-3xl: var(--font-size-3xl);
+
+  /* Border Radius */
+  --radius-sm: var(--app-radius-sm);
+  --radius-md: var(--app-radius-md);
+  --radius-lg: var(--app-radius-lg);
+  --radius-xl: var(--app-radius-xl);
+  --radius-full: var(--app-radius-full);
+
+  /* Shadows */
+  --shadow-card: var(--shadow-card);
+  --shadow-dropdown: var(--shadow-dropdown);
+}
